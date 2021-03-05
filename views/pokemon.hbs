@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            {{pokemon}}
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/list.js"></script>
+    </head>
+
+    <body>
+        <h1>{{pokemon}}</h1>
+
+<h1>Moves</h1>        
+
+<ul>
+   {{#each moves}}
+    <li class="move">{{move.name}}</li>
+{{/each}}
+</ul>
+     
+
+        <img src={{image}} alt="Pikachu">
+    </body>
+</html>
